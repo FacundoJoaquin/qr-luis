@@ -3,13 +3,16 @@ import lobos from "../assets/lobos.jpeg";
 import Bote from "../assets/bote.avif";
 ---
 
-<section class="relative min-h-dvh bg-black space-y-28">
-  <div class=" h-[50vh] overflow-hidden">
-    <img src={lobos.src} alt="lobos" class="w-full h-full object-cover object-bottom" />
+<section class="relative min-h-dvh bg-black space-y-12 md:space-y-28">
+  <div class="h-[50vh] overflow-hidden">
+    <img
+      src={lobos.src}
+      alt="lobos"
+      class="w-full h-full object-cover object-bottom"
+    />
   </div>
-   <div class="w-full absolute top-[55%] -translate-y-1/2 text-center z-50">
+  <div class="w-full absolute top-[45%] -translate-y-1/2 text-center z-50">
     <h1 class="text-white text-2xl font-bold">Patagonia Scuba</h1>
-    <h2 class="text-gray-400 text-xs mt-1">Puerto Piramides, Chubut</h2>
     <div class="w-full flex justify-center items-center gap-4 mt-4">
       <a
         href="https://wa.me/542804578779"
@@ -72,11 +75,7 @@ import Bote from "../assets/bote.avif";
       rel="noopener noreferrer"
       class="col-span-2 w-full rounded-lg overflow-hidden cursor-pointer video-container"
     >
-      <img
-        src={Bote.src}
-        alt="Bote"
-        class="w-full h-full object-cover"
-      />
+      <img src={Bote.src} alt="Bote" class="w-full h-full object-cover" />
       <div class="image-dark-overlay"></div>
       <div class="video-overlay">
         <span class="text-white font-medium">Mira nuestras excursiones</span>
