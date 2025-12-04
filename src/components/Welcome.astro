@@ -1,12 +1,11 @@
 ---
-import { Image } from "astro:assets";
 import lobos from "../assets/lobos.jpeg";
 import Bote from "../assets/bote.avif";
 ---
 
 <section class="relative min-h-dvh bg-black space-y-28">
   <div class=" h-[50vh] overflow-hidden">
-    <Image src={lobos} alt="lobos" class="w-full h-full object-cover object-bottom" />
+    <img src={lobos.src} alt="lobos" class="w-full h-full object-cover object-bottom" />
   </div>
    <div class="w-full absolute top-[55%] -translate-y-1/2 text-center z-50">
     <h1 class="text-white text-2xl font-bold">Patagonia Scuba</h1>
@@ -73,11 +72,10 @@ import Bote from "../assets/bote.avif";
       rel="noopener noreferrer"
       class="col-span-2 w-full rounded-lg overflow-hidden cursor-pointer video-container"
     >
-      <Image
-        src={Bote}
+      <img
+        src={Bote.src}
         alt="Bote"
         class="w-full h-full object-cover"
-        loading={"eager"}
       />
       <div class="image-dark-overlay"></div>
       <div class="video-overlay">
